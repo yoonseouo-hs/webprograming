@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>시맨틱 웹페이지 aria 연습</title>
+</head>
+<body>
+    <header>
+        <h1>웹사이트 연습</h1>
+        <nav>
+            <button aria-label="메뉴 열기">☰</button>
+            <ul>
+                <li><a href="#home">홈</a></li>
+                <li><a href="https://m.blog.naver.com/PostList.naver?blogId=ourcolordiary&tab=1" target="_blank" rel="noopener noreferrer">블로그</a></li>
+                <li><a href="#reference">참고자료</a></li>
+            </ul>
+            <input type="password" aria-describedby="pwd-help">
+            <div id="pwd-help">비밀번호를 입력하세요.</div>
+            <div role="alert">알림 메시지</div>
+        </nav>
+    </header>
+
+    <main>
+        <article>
+            <h2>자료찾기</h2>
+            <p>
+                <a href="https://kr.pinterest.com/" target="_blank" rel="noopener noreferrer">Pinterest열기</a>
+            </p>
+        </article>
+        
+        <section>
+            <h2>추가 정보</h2>
+            <p>
+                <img src="wish.jpg" alt="위시 이미지" width="200" height="200">
+            </p>
+        </section>
+    </main>
+
+    <aside>
+        <h3>관련 링크</h3>
+        <ul>
+            <li><a href="mailto:example@example.com">이메일 보내기</a></li>
+            <li><a href="tel:+82-10-1234-5678">전화걸기</a></li>
+        </ul>
+    </aside>
+
+    <footer>
+        <p>© 2025 웹사이트명. 모든 권리 보유.</p>
+    </footer>
+</body>
+</html>
